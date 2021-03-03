@@ -1,7 +1,9 @@
 const path = require("path");
 
+const regeneratorRuntime = require("regenerator-runtime");
+
 module.exports = {
-    entry: "./src/index.js",
+    entry: ["@babel/polyfill", "./src/index.js"],
     mode: "development",
     output: {
         filename: "main.js",
@@ -10,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.(js|jsx)$/,
                 exclude: /(node_modules)/,
                 use: {
                     loader: "babel-loader",
@@ -20,15 +22,21 @@ module.exports = {
                 },
             },
             {
-                test: /\.css$/,
-                use: [{ loader: "style-loader" }, { loader: "css-loader" }, { loader: "sass-loader" }],
+                // Apply rule for .sass, .scss or .css files
+                test: /\.(sa|sc|c)ss$/,
+                use: ["style-loader", "css-loader", "sass-loader"],
             },
             {
-                test: /\.(png|jpg)$/,
-                use: [{ loader: "url-loader" }],
+                test: /\.(png|eot|ttf|svg|gif|woff|jpg)$/,
+                use: ["url-loader"],
             },
         ],
     },
+
+    devServer: {
+        historyApiFallback: true,
+    },
+
     devServer: {
         port: 8080,
         contentBase: path.resolve(__dirname, "dist"),
