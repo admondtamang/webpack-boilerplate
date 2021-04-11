@@ -1,0 +1,63 @@
+.profile {
+    margin-top: 2rem;
+    .react-tabs__tab--selected {
+        background: transparent !important;
+        border-color: transparent !important;
+        border-radius: 10px !important;
+        background-color: #ff4747 !important;
+        color: white !important;
+    }
+    .react-tabs__tab {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-bottom: none;
+        bottom: -1px;
+        border-radius: 10px !important;
+        color: #d75552;
+        margin-right: 10px;
+        border: 1px solid #ff4747 !important;
+        cursor: pointer;
+    }
+    .react-tabs__tab-list {
+        border: none !important;
+    }
+
+    table {
+        display: table;
+        border-spacing: 2px;
+        border-color: gray;
+    }
+    table,
+    td,
+    th {
+        padding: 0.5em 1em;
+        border: 1px solid gray;
+    }
+    thead {
+        display: table-header-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+
+    tbody {
+        display: table-row-group;
+        vertical-align: middle;
+        border-color: inherit;
+    }
+    .profile__heading {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        h2 {
+            font-weight: bold;
+        }
+        button {
+            font-weight: bold;
+            padding: 0px 1em;
+            background-color: #ffe2e2;
+            color: #ff4747;
+            border: none;
+            border-radius: 10px;
+        }
+    }
+}

@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap");
+@import "./responsive.scss";
+//@import "boxicons";
+@import "antd/dist/antd.css";
+@import "skeleton.scss";
+@import "./variables.scss";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&display=swap"); */
+body {
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: "Poppins";
+    background-color: #f8f8f7;
+    /* transition: cubic-bezier(0.6, 0.04, 0.98, 0.335); */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: black;
+}
+.sidebar-top {
+    padding-top: 60px;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+
+.ant-breadcrumb {
+    margin: 10px 0;
+    .ant-breadcrumb-link {
+        font-weight: 600;
+    }
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    .error {
+        color: red;
+    }
+    label {
+        span {
+            color: red;
+        }
+    }
+    input {
+        border-radius: 5px;
+        background-color: #f8f8f7;
+        outline: none;
+        border: none;
+        max-height: 35px;
+        padding: 20px 10px;
+    }
+}
+.ant-image-preview-img {
+    display: inline !important;
+    width: auto;
+}
+// .shadow {
+//     -webkit-box-shadow: 0 5px 20px -5px rgb(0 0 0 / 7%);
+//     box-shadow: 0 5px 20px -5px rgb(0 0 0 / 7%);
+// }
+// .ant-row::after {
+//     content: "" !important;
+//     flex: auto !important;
+// }

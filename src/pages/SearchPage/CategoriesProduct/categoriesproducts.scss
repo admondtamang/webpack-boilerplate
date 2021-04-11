@@ -1,0 +1,49 @@
+.categoriesproducts {
+    margin-bottom: 100px;
+    h2 {
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .sortresult {
+        display: flex;
+        margin: 20px 0;
+        justify-content: space-between;
+        &__sort {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+        }
+    }
+    .breadcrum {
+        p {
+            a {
+                color: grey !important;
+            }
+        }
+    }
+    .categoriesproducts__list {
+        display: grid; /* 1 */
+        grid-template-columns: repeat(auto-fill, 210px); /* 2 */
+        grid-gap: 1rem; /* 3 */
+        justify-content: space-between; /* 4 */
+    }
+
+    // theming react tabs
+    .react-tabs__tab--selected {
+        background: #ff4747;
+        border-color: #ff4747;
+        color: white;
+        border-radius: 10px;
+    }
+    .react-tabs__tab-list {
+        background-color: white;
+        border-bottom: none;
+        border-radius: 10px;
+
+        margin: 0 0 10px;
+        padding: 0;
+    }
+    .ant-pagination {
+        margin: 40px 0;
+    }
+}

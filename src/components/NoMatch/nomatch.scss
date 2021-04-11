@@ -1,0 +1,15 @@
+.noProductFound {
+    display: flex;
+    flex-direction: column;
+    padding: 20vh 0;
+    text-align: center;
+    .big__icons {
+        font-size: 100px;
+    }
+    h3 {
+        margin-top: 15px;
+    }
+    p {
+        color: grey;
+    }
+}

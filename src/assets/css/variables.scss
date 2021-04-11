@@ -1,0 +1,22 @@
+$blue-gradient: linear-gradient(45deg, #0136af, #22abfa);
+$red-gradient: linear-gradient(45deg, #d62926, #ee625f);
+$green-gradient: linear-gradient(45deg, #11998e, #1ce669);
+$orange-gradient: linear-gradient(45deg, #fc4a1a, #f7b733);
+$black-gradient: linear-gradient(45deg, #111, #666);
+
+$primary-color: #c8322d;
+$secondary-color: #ff4747;
+
+$gradientBgs: (
+    "blue": $blue-gradient,
+    "red": $red-gradient,
+    "green": $green-gradient,
+    "orange": $orange-gradient,
+    "black": $black-gradient,
+);
+
+$box-shadow1: 15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+
+$box-shadow2: -15px 0 35px rgba(0, 0, 0, 0.1), 0 -15px 35px rgba(0, 0, 0, 0.1), 0 15px 35px rgba(0, 0, 0, 0.1);
+
+$box-shadow3: 0 0 10px 0.5px rgba(0, 0, 0, 0.2);

@@ -1,0 +1,8 @@
+.home {
+    .whitecontiner__products {
+        display: grid; /* 1 */
+        grid-template-columns: repeat(auto-fill, 130px); /* 2 */
+        grid-gap: 1rem; /* 3 */
+        justify-content: space-between; /* 4 */
+    }
+}

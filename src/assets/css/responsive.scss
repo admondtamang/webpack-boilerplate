@@ -1,0 +1,47 @@
+.App__body,
+.header,
+.navbar,
+.footer__container {
+    margin: 0 auto;
+    width: calc(max(70%, 400px));
+}
+
+@media screen and (max-width: 1640px) {
+    .header,
+    .navbar,
+    .footer__container,
+    .App__body {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header,
+    .navbar,
+    .footer__container,
+    .App__body {
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .footer__container,
+    .header,
+    .navbar,
+    .App__body {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+// @media screen and (max-width: 992px) {
+//     .header,
+//     .footer__container,
+//     .navbar,
+//     .App__body {
+//         width: 90%;
+//         margin: 0 auto;
+//     }
+// }

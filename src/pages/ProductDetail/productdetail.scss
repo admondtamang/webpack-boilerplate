@@ -1,0 +1,99 @@
+// .contain {
+//     background-color: #004cef;
+//     padding: 6px 25px;
+//     color: white;
+//     border-radius: 5px;
+//     display: block;
+//     max-width: 196px;
+//     text-align: center;
+// }
+// .outline {
+//     max-width: 196px;
+//     background-color: transparent;
+//     border: 1px solid #004cef;
+//     text-align: center;
+//     padding: 6px 25px;
+//     border-radius: 5px;
+// }
+.productDetail {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
+
+    .productdetail__container {
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        gap: 1em;
+        .react-tabs {
+            width: 100%;
+        }
+        .product__detail__overview {
+            ul {
+                margin-left: 20px;
+            }
+            img {
+                width: auto !important;
+            }
+        }
+    }
+    .container-gap {
+        margin-bottom: 40px;
+    }
+}
+
+// Tabs
+.productdetail__container {
+    .react-tabs__tab--selected {
+        background: transparent !important;
+        border-color: transparent !important;
+        border-radius: 10px !important;
+        background-color: #ff4747 !important;
+        color: white !important;
+    }
+    .react-tabs__tab {
+        display: inline-block;
+        border: 1px solid transparent;
+        border-bottom: none;
+        bottom: -1px;
+        border-radius: 10px !important;
+        color: #d75552;
+        margin-right: 10px;
+        border: 1px solid #ff4747 !important;
+        cursor: pointer;
+    }
+    .react-tabs__tab-list {
+        border: none !important;
+    }
+}
+
+// .productdetail {
+//     display: flex;
+//     gap: 1em;
+
+//     .whitecontainer {
+//         ul {
+//             li {
+//                 list-style: none !important;
+//                 color: #333;
+//             }
+//         }
+//     }
+//     .categoriescontainer {
+//         padding-right: 20px;
+//         margin-bottom: 80px;
+//         .categoriescontainer__products {
+//             display: grid; /* 1 */
+//             grid-template-columns: repeat(auto-fill, 210px); /* 2 */
+//             grid-gap: 1.5em; /* 3 */
+//             justify-content: space-between; /* 4 */
+//         }
+//     }
+
+//     .productdetail__sidebar {
+//         .smallproduct {
+//             margin-bottom: 40px;
+//         }
+//     }
+// }

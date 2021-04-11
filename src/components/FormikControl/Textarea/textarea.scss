@@ -1,0 +1,21 @@
+.form-control {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    .error {
+        color: red;
+    }
+    label {
+        span {
+            color: red;
+        }
+    }
+    textarea {
+        border-radius: 5px;
+        background-color: #f8f8f7;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding: 15px 10px;
+    }
+}

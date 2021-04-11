@@ -1,0 +1,16 @@
+.whitecontiner__products {
+    .form__container {
+        display: grid;
+        grid-template-areas:
+            "main main"
+            "main  main"
+            "footer   footer  ";
+        gap: 1em;
+        // &:last-child {
+        //     background-color: red;
+        // }
+    }
+    .form__bottom {
+        margin-top: 10px;
+    }
+}

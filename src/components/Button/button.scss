@@ -1,0 +1,33 @@
+.btn-container {
+    display: flex;
+    cursor: pointer;
+    gap: 0.2em;
+    align-items: center;
+    // border-radius: 10px;
+    border-radius: 50px;
+    max-width: 195px;
+    text-align: center;
+    font-size: 12px;
+    padding: 0 10px;
+    border: 2px solid #c8322d;
+    color: #c8322d;
+    justify-content: center;
+    span {
+        font-weight: 600;
+    }
+}
+.contain {
+    border-radius: 5px;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 30px;
+    background-color: #c8322d;
+}
+.secondary {
+    color: #6e6d7a;
+    font-weight: 500;
+    background: rgba(13, 12, 34, 0.05);
+    border-radius: 8px;
+    padding: 10px 12px;
+}
